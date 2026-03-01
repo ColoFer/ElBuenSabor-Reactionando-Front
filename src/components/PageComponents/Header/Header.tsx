@@ -14,6 +14,8 @@ import { Register } from "../../LoginRegister/Register/Register";
 import Logout from "../../LoginRegister/Logout/Logout";
 import { useAuth } from "../../../context/AuthContext";
 
+import ImagenLogo from "../../../assets/Logo.png";
+
 const Header = () => {
   const navigate = useNavigate();
 
@@ -26,7 +28,7 @@ const Header = () => {
         <Navbar expand="lg" className="contenedor">
           <Container>
             <Nav.Link className="logonav" onClick={() => navigate("/")}>
-              <img src="src/assets/Logo.png" alt="logo" />
+              <img src={ImagenLogo} />
             </Nav.Link>
 
             {/* BOTONES DE LOGIN */}
